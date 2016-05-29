@@ -1,7 +1,7 @@
 {
     "name": "moledesign/theme-sliding-heroes",
     "type": "pagekit-theme",
-    "version": "1.0.0",
+    "version": "1.0.0-RC1",
     "title": "Sliding Heroes",
     "description": "Based on Pagekit's default theme, One.",
     "license": "MIT",
