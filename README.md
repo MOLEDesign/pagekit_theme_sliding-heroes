@@ -1,2 +1,3 @@
-# theme-sliding-heroes
-A PageKit theme based on One.
+# One Theme
+
+Pagekit's default theme.
