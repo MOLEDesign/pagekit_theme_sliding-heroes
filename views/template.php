@@ -52,7 +52,7 @@
 
                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scale'}">
 
-                    <ul class="uk-slideshow tm-hero uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>>
+                    <ul class="uk-slideshow tm-hero uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
                         <li>
                             <div class="uk-container uk-container-center">
                                 <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
@@ -61,20 +61,78 @@
                             </div>
 
                         </li>
-                        <li>
-                            <div class="uk-container uk-container-center">
-                                <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
-                                    <?= $view->position('slide-01', 'position-grid.php') ?>
-                                </section>
-                            </div>
-                        </li>
+
+                        <?php if ($view->position()->exists('slide-01')) : ?>
+                            <li>
+                                <div class="uk-container uk-container-center">
+                                    <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                        <?= $view->position('slide-01', 'position-grid.php') ?>
+                                    </section>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($view->position()->exists('slide-02')) : ?>
+                            <li>
+                                <div class="uk-container uk-container-center">
+                                    <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                        <?= $view->position('slide-02', 'position-grid.php') ?>
+                                    </section>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($view->position()->exists('slide-03')) : ?>
+                            <li>
+                                <div class="uk-container uk-container-center">
+                                    <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                        <?= $view->position('slide-03', 'position-grid.php') ?>
+                                    </section>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($view->position()->exists('slide-04')) : ?>
+                            <li>
+                                <div class="uk-container uk-container-center">
+                                    <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                        <?= $view->position('slide-04', 'position-grid.php') ?>
+                                    </section>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($view->position()->exists('slide-05')) : ?>
+                            <li>
+                                <div class="uk-container uk-container-center">
+                                    <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                        <?= $view->position('slide-05', 'position-grid.php') ?>
+                                    </section>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+                        
                     </ul>
                        
                     <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
                     <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
                     <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
                         <li data-uk-slideshow-item="0"><a href=""></a></li>
-                        <li data-uk-slideshow-item="1"><a href=""></a></li>
+                        <?php if ($view->position()->exists('slide-01')) : ?>
+                            <li data-uk-slideshow-item="1"><a href=""></a></li>
+                        <?php endif; ?>
+                        <?php if ($view->position()->exists('slide-02')) : ?>
+                            <li data-uk-slideshow-item="2"><a href=""></a></li>
+                        <?php endif; ?>
+                        <?php if ($view->position()->exists('slide-03')) : ?>
+                            <li data-uk-slideshow-item="3"><a href=""></a></li>
+                        <?php endif; ?>
+                        <?php if ($view->position()->exists('slide-04')) : ?>
+                            <li data-uk-slideshow-item="4"><a href=""></a></li>
+                        <?php endif; ?>
+                        <?php if ($view->position()->exists('slide-05')) : ?>
+                            <li data-uk-slideshow-item="5"><a href=""></a></li>
+                        <?php endif; ?>
                     </ul>
                         
                 </div>
