@@ -6,7 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= $view->render('head') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
-        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky', 'uikit-slideshow', 'uikit-lightbox', 'uikit-parallax']) ?>
+        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky', 'uikit-lightbox', 'uikit-parallax']) ?>
+
+        <?php if ($view->position()->exists('slide-01') || $view->position()->exists('slide-02') || $view->position()->exists('slide-03') || $view->position()->exists('slide-04') || $view->position()->exists('slide-05')) : ?>
+        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-slideshow']) ?>
+        <?php endif ?>
+
     </head>
     <body>
 
