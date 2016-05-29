@@ -7,6 +7,7 @@
         <?= $view->render('head') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
         <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox',  'uikit-parallax']) ?>
+        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-slideshow']) ?>
     </head>
     <body>
 
