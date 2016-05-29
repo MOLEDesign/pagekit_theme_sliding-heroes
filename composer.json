@@ -1,15 +1,15 @@
 {
-    "name": "pagekit/theme-one",
+    "name": "moledesign/theme-sliding-heroes",
     "type": "pagekit-theme",
     "version": "1.0.0",
-    "title": "One",
-    "description": "Pagekit's default theme.",
+    "title": "Sliding Heroes",
+    "description": "Based on Pagekit's default theme, One.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Pagekit",
-            "email": "info@pagekit.com",
-            "homepage": "http://pagekit.com"
+            "name": "MOLE Design",
+            "email": "morgan@mole.design",
+            "homepage": "http://www.mole.design"
         }
     ],
     "extra": {
