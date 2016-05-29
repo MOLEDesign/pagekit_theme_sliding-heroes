@@ -69,6 +69,18 @@
         </div>
         <?php endif; ?>
 
+        <?php if ($view->position()->exists('hero-2')) : ?>
+            <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_2_image'] ? "style=\"background-image: url('{$view->url($params['hero_2_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+                <div class="uk-container uk-container-center">
+
+                    <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                        <?= $view->position('hero-2', 'position-grid.php') ?>
+                    </section>
+
+                </div>
+            </div>
+        <?php endif; ?>
+
         <div id="tm-main" class="tm-main uk-block <?= $params['main_style'] ?>">
             <div class="uk-container uk-container-center">
 
@@ -89,6 +101,18 @@
             </div>
         </div>
 
+        <?php if ($view->position()->exists('hero-3')) : ?>
+            <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_3_image'] ? "style=\"background-image: url('{$view->url($params['hero_3_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+                <div class="uk-container uk-container-center">
+
+                    <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                        <?= $view->position('hero-3', 'position-grid.php') ?>
+                    </section>
+
+                </div>
+            </div>
+        <?php endif; ?>
+
         <?php if ($view->position()->exists('bottom')) : ?>
         <div id="tm-bottom" class="tm-bottom uk-block <?= $params['bottom_style'] ?>">
             <div class="uk-container uk-container-center">
@@ -99,6 +123,18 @@
 
             </div>
         </div>
+        <?php endif; ?>
+
+        <?php if ($view->position()->exists('hero-4')) : ?>
+            <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_4_image'] ? "style=\"background-image: url('{$view->url($params['hero_4_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+                <div class="uk-container uk-container-center">
+
+                    <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                        <?= $view->position('hero-4', 'position-grid.php') ?>
+                    </section>
+
+                </div>
+            </div>
         <?php endif; ?>
 
         <?php if ($view->position()->exists('footer')) : ?>
