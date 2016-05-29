@@ -1,5 +1,5 @@
 {
-  "name": "theme-one",
+  "name": "theme-sliding-heroes",
   "dependencies": {
     "uikit": "#master"
   },
