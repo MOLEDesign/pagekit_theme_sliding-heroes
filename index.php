@@ -2,7 +2,7 @@
 
 return [
 
-    'name' => 'theme-one',
+    'name' => 'theme-sliding-heroes',
 
     /**
      * Menu positions
@@ -21,6 +21,10 @@ return [
 
         'navbar' => 'Navbar',
         'hero' => 'Hero',
+        'hero-2' => 'Hero 2',
+        'hero-3' => 'Hero 3',
+        'hero-4' => 'Hero 4',
+        'hero-5' => 'Hero 5',
         'top' => 'Top',
         'sidebar' => 'Sidebar',
         'bottom' => 'Bottom',
@@ -40,6 +44,10 @@ return [
         'html_class' => '',
         'sidebar_first' => false,
         'hero_image' => '',
+        'hero_2_image' => '',
+        'hero_3_image' => '',
+        'hero_4_image' => '',
+        'hero_5_image' => '',
         'hero_viewport' => '',
         'hero_contrast' => '',
         'hero_parallax' => '',
