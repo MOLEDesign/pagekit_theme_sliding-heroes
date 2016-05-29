@@ -45,15 +45,54 @@
         <?php endif ?>
 
         <?php if ($view->position()->exists('hero')) : ?>
-        <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
-            <div class="uk-container uk-container-center">
+        <div id="tm-hero">
+            <div class="tm-hero">
 
-                <section class="uk-grid uk-grid-match" data-uk-grid-margin>
-                    <?= $view->position('hero', 'position-grid.php') ?>
-                </section>
+            <?php if ($view->position()->exists('slide-01') || $view->position()->exists('slide-02') || $view->position()->exists('slide-03') || $view->position()->exists('slide-04') || $view->position()->exists('slide-05')) { ?>
 
+                <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scale'}">
+
+                    <ul class="uk-slideshow tm-hero uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>>
+                        <li>
+                            <div class="uk-container uk-container-center">
+                                <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                    <?= $view->position('hero', 'position-grid.php') ?>
+                                </section>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="uk-container uk-container-center">
+                                <section class="uk-block uk-grid uk-grid-match" data-uk-grid-margin>
+                                    <?= $view->position('slide-01', 'position-grid.php') ?>
+                                </section>
+                            </div>
+                        </li>
+                    </ul>
+                       
+                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                        <li data-uk-slideshow-item="0"><a href=""></a></li>
+                        <li data-uk-slideshow-item="1"><a href=""></a></li>
+                    </ul>
+                        
+                </div>
+                    
+            <?php } else { ?>
+
+                <div class="tm-hero uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+                    <div class="uk-container uk-container-center">
+    
+                        <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                                <?= $view->position('hero', 'position-grid.php') ?>
+                        </section>
+                    </div>
+                </div>
+            
+            <?php }; ?>
             </div>
-        </div>
+        </div>      
         <?php endif; ?>
 
         <?php if ($view->position()->exists('top')) : ?>
