@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= $view->render('head') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
-        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox',  'uikit-parallax']) ?>
-        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-slideshow']) ?>
+        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky', 'uikit-slideshow', 'uikit-lightbox', 'uikit-parallax']) ?>
     </head>
     <body>
 
@@ -70,7 +69,7 @@
         <?php endif; ?>
 
         <?php if ($view->position()->exists('hero-2')) : ?>
-            <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_2_image'] ? "style=\"background-image: url('{$view->url($params['hero_2_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+            <div id="tm-hero-2" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_2_image'] ? "style=\"background-image: url('{$view->url($params['hero_2_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
                 <div class="uk-container uk-container-center">
 
                     <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -102,7 +101,7 @@
         </div>
 
         <?php if ($view->position()->exists('hero-3')) : ?>
-            <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_3_image'] ? "style=\"background-image: url('{$view->url($params['hero_3_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+            <div id="tm-hero-3" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_3_image'] ? "style=\"background-image: url('{$view->url($params['hero_3_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
                 <div class="uk-container uk-container-center">
 
                     <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -126,7 +125,7 @@
         <?php endif; ?>
 
         <?php if ($view->position()->exists('hero-4')) : ?>
-            <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_4_image'] ? "style=\"background-image: url('{$view->url($params['hero_4_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
+            <div id="tm-hero-4" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_4_image'] ? "style=\"background-image: url('{$view->url($params['hero_4_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
                 <div class="uk-container uk-container-center">
 
                     <section class="uk-grid uk-grid-match" data-uk-grid-margin>
